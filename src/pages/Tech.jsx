@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import Nav from '../compennts/Nav';
 import './Tech.css';
-import rocket from '../../public/Exo Router Template/img/image-launch-vehicle-portrait.jpg'; // adapte si nécessaire
 
 function Tech() {
   const data = [
@@ -10,21 +9,24 @@ function Tech() {
       name: 'LAUNCH VEHICLE',
       description:
         "A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!",
-      image: rocket,
+      image: <img src="/Exo Router Template/img/image-launch-vehicle-portrait.jpg" alt="Launch Vehicle" />
+,
     },
     {
       id: 2,
       name: 'SPACEPORT',
       description:
         'A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of the Earth’s rotation for launch.',
-      image: rocket,
+      image: <img src="/Exo Router Template/img/image-launch-vehicle-portrait.jpg" alt="Launch Vehicle" />
+,
     },
     {
       id: 3,
       name: 'LAUNCH VEHICULE ',
       description:
         " A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!",
-      image: rocket,
+      image: <img src="/Exo Router Template/img/image-launch-vehicle-portrait.jpg" alt="Launch Vehicle" />
+,
     },
   ];
 

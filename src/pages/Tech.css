@@ -19,7 +19,7 @@
 .contain-Tech {
   background-size: cover;          
   background-position: center;   
-  background-image: url('../../public/Exo\ Router\ Template/img/tech-bg.png');
+background-image: url('/Exo Router Template/img/tech-bg.png');
 }
 .tech-content {
   display: flex;

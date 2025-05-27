@@ -2,7 +2,6 @@ import Nav from '../compennts/Nav';
 import './Crew.css';
 import { useState } from 'react';
 
-import doug from '../../public/Exo Router Template/img/image-douglas-hurley.webp'; 
 import anou from '../assets/crew/image-anousheh-ansari.webp'; 
 import mark from '../assets/crew/image-mark-Shuttleworth.webp'; 
 import vic from '../assets/crew/image-victor-Glover.webp'; 
@@ -14,7 +13,8 @@ function Crew() {
       name: 'DOUGLAS HURLEY',
       description:
         'Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.',
-      image: doug,
+      image: <img src="/Exo Router Template/img/image-douglas-hurley.webp" alt="Douglas" />
+,
     },
     {
       role: 'MISSION SPECIALIST',
