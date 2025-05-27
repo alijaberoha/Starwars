@@ -1,0 +1,78 @@
+.tech-container {
+  padding: 5%;
+  color: white;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+.tech-container h5 {
+  font-size: 18px;
+  letter-spacing: 4px;
+  color: #d0d6f9;
+  margin-bottom: 50px;
+}
+
+.tech-container h5 span {
+  color: grey;
+  margin-right: 10px;
+}
+
+.contain-Tech {
+  background-size: cover;          
+  background-position: center;   
+  background-image: url('../../public/Exo\ Router\ Template/img/tech-bg.png');
+}
+.tech-content {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.tech-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.tech-buttons button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tech-buttons .active {
+  background-color: white;
+  color: black;
+}
+
+.tech-text {
+  max-width: 400px;
+}
+
+.tech-text h6 {
+  font-size: 16px;
+  color: #d0d6f9;
+  text-transform: uppercase;
+}
+
+.tech-text h1 {
+  font-family: 'Bellefair', serif;
+  font-size: 40px;
+  margin: 15px 0;
+}
+
+.tech-text p {
+  color: #d0d6f9;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.tech-image img {
+  width: 350px;
+  height: auto;
+}

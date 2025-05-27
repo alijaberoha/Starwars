@@ -1,0 +1,277 @@
+.contain-Home {
+  min-height: 100vh;               
+  width: 100vw;                    
+  background-image: url("src/assets/home/background-home-desktop.jpg");
+  background-size: cover;         
+  background-position: center;    
+  background-repeat: no-repeat;
+  color: white;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+.navig li {
+  font-size: 14px;
+  letter-spacing: 2px;
+  position: relative;
+}
+
+
+.home-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 80vh;
+  padding: 0 10%;
+}
+
+.left h5 {
+  font-size: 20px;
+  letter-spacing: 4px;
+  font-weight: 300;
+  color: white;
+}
+
+.left h1 {
+  font-size: 150px;
+  font-family: 'Bellefair', serif;
+  margin: 20px 0;
+}
+
+.left p {
+  font-size: 16px;
+  color:white;
+  max-width: 400px;
+  line-height: 1.8;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.explore-btn {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  color: #0b0d17;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  font-family: 'Bellefair', serif;
+  cursor: pointer;
+  transition: 0.3s;
+}
+/* 🔧 Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* 🌌 Container principal */
+.contain-Home {
+  min-height: 100vh;
+  width: 100vw;
+  background-image: url("src/assets/home/background-home-desktop.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+/* 🧭 NAV */
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+  color: white;
+  align-items: center;
+}
+
+nav img {
+  width: 30px;
+  height: 30px;
+}
+
+.ligne {
+  border: 2px solid;
+  height: 1px;
+  width: 200px;
+  padding: 0px;
+}
+
+.navig ul {
+  display: flex;
+  justify-content: space-between;
+  text-decoration-line: none;
+  list-style: none;
+  gap: 40px;
+}
+
+.navig li {
+  font-size: 14px;
+  letter-spacing: 2px;
+  position: relative;
+}
+
+.navig li a {
+  text-decoration: none;
+  color: white;
+}
+
+.navig li.active::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: white;
+}
+
+/* 🧩 Contenu principal */
+.home-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: calc(100vh - 100px);
+  padding: 0 10%;
+  flex-wrap: wrap;
+}
+
+.left h5 {
+  font-size: 20px;
+  letter-spacing: 4px;
+  font-weight: 300;
+  color: white;
+}
+
+.left h1 {
+  font-size: 150px;
+  font-family: 'Bellefair', serif;
+  margin: 20px 0;
+}
+
+.left p {
+  font-size: 16px;
+  color: white;
+  max-width: 400px;
+  line-height: 1.8;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.explore-btn {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  color: #0b0d17;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  font-family: 'Bellefair', serif;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.explore-btn:hover {
+  box-shadow: 0 0 0 40px rgba(255, 255, 255, 0.1);
+}
+
+/* 📱 Responsive TABLETTE */
+@media (max-width: 1024px) {
+  .contain-Home {
+    background-image: url("src/assets/home/background-home-tablet.jpg");
+  }
+
+  .home-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 60px;
+    padding-top: 60px;
+  }
+
+  .left h1 {
+    font-size: 120px;
+  }
+
+  .explore-btn {
+    width: 180px;
+    height: 180px;
+    font-size: 20px;
+  }
+
+  .ligne {
+    display: none;
+  }
+
+  .navig {
+    padding: 15px 40px;
+  }
+}
+
+/* 📱 Responsive MOBILE (iPhone) */
+@media (max-width: 768px) {
+  .contain-Home {
+    background-image: url("src/assets/home/background-home-mobile.jpg");
+  }
+
+  .home-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    gap: 50px;
+  }
+
+  .left h5 {
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+  }
+
+  .left h1 {
+    font-size: 56px;
+    line-height: 1;
+  }
+
+  .left p {
+    font-size: 15px;
+    max-width: 300px;
+    margin: 0 auto;
+    line-height: 1.7;
+    color: #d0d6f9;
+  }
+
+  .explore-btn {
+    width: 140px;
+    height: 140px;
+    font-size: 18px;
+  }
+
+  nav {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  .ligne,
+  .navig {
+    display: none;
+  }
+}
