@@ -180,6 +180,24 @@ nav img {
 .explore-btn:hover {
   box-shadow: 0 0 0 40px rgba(255, 255, 255, 0.1);
 }
+.rocket-zone {
+  position: relative;
+  height: 0;
+  overflow: visible;
+}
+
+.rocket {
+  width: 100px;
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: transform 2s ease-out;
+}
+
+.rocket.launch {
+  transform: translate(-50%, -600px) rotate(-20deg);
+}
 
 @media (max-width: 1024px) {
   .contain-Home {

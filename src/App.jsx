@@ -9,16 +9,19 @@ import Mars from './pages/destination/Mars';
 import Europa from './pages/destination/Europa';
 import Titan from './pages/destination/Titan';
 import { Navigate } from 'react-router-dom';
+import r2 from "./assets/giphy2.webp"
 
 function App() {
+
   return (
-    <Routes>
+
+    <div>
+          <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/technology" element={<Tech />} />
       <Route path="/crew" element={<Crew />} />
 
       <Route path="/destination" element={<Destination />}>
-        {/* ✅ Redirection par défaut vers /moon */}
         <Route index element={<Navigate to="moon" />} />
         
         <Route path="moon" element={<Moon />} />
@@ -27,6 +30,12 @@ function App() {
         <Route path="titan" element={<Titan />} />
       </Route>
     </Routes>
+      <img
+  src={r2}
+  alt="R2-D2"
+  className="r2d2"
+/>
+    </div>
   );
 }
 

@@ -50,6 +50,7 @@ function Tech() {
               </button>
             ))}
           </div>
+        
 
           <div className="tech-text">
             <h6>THE TERMINOLOGY...</h6>
