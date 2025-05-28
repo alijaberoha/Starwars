@@ -80,3 +80,91 @@
 .crew-dots .active {
   background-color: white;
 }
+/* === TABLETTE === */
+@media (max-width: 1024px) {
+  .contain-Crew {
+    background-image: url('/src/assets/crew/background-crew-tablet.jpg');
+    text-align: center;
+    padding: 30px 40px;
+  }
+
+  .crew-content {
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
+
+  .crew-image img {
+    height: 420px;
+  }
+
+  .crew-left h5 {
+    font-size: 20px;
+  }
+
+  .crew-left h6 {
+    font-size: 18px;
+  }
+
+  .crew-left h1 {
+    font-size: 40px;
+  }
+
+  .crew-left p {
+    font-size: 16px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .crew-dots {
+    justify-content: center;
+    margin-top: 30px;
+  }
+}
+
+
+/* === MOBILE (iPhone, etc.) === */
+@media (max-width: 768px) {
+  .contain-Crew {
+    background-image: url('/src/assets/crew/background-crew-mobile.jpg');
+    padding: 20px;
+  }
+
+  .crew-content {
+    flex-direction: column-reverse;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .crew-image img {
+    height: 280px;
+  }
+
+  .crew-left h5 {
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+  }
+
+  .crew-left h6 {
+    font-size: 14px;
+  }
+
+  .crew-left h1 {
+    font-size: 28px;
+  }
+
+  .crew-left p {
+    font-size: 14px;
+    max-width: 90%;
+  }
+
+  .crew-dots {
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .crew-dots button {
+    width: 8px;
+    height: 8px;
+  }
+}

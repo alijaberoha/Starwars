@@ -19,7 +19,9 @@ function Home() {
           </p>
         </div>
         <div className="right">
-          <div className="explore-btn">EXPLORE</div>
+<a className="explore-btn" href="https://eyes.nasa.gov/apps/orrery" target="_blank" rel="noopener noreferrer">
+  EXPLORE
+</a>        
         </div>
       </div> 
     </div>
